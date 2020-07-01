@@ -1,4 +1,5 @@
 @import "config"; // partial should always begin with _ but skip _ refering to them
+@import "menu";
 
 * {
   box-sizing: border-box;
@@ -38,7 +39,7 @@ a {
 }
 
 header {
-  position: fixed;
+  position: none;
   z-index: 2; // forground, the bigger number the closer to you
 }
 
