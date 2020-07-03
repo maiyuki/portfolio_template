@@ -1,5 +1,6 @@
 @import "config"; // partial should always begin with _ but skip _ refering to them
 @import "menu";
+@import "mobile";
 
 * {
   box-sizing: border-box;
