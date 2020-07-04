@@ -139,6 +139,28 @@ main {
   }
 }
 
+// contact.html
+.boxes {
+  display: flex;
+  flex-wrap: wrap; // when the boxes do not fit, it will hope down
+  justify-content: space-evenly;
+  align-items: center;
+  margin-top: 1rem; // so it looks ince when they stack on top eachother
+
+  div {
+    font-size: 1rem;
+    border: 1px #fff solid;
+    border-radius: 10px 0px;
+    padding: 1rem 2.5rem;
+    margin-bottom: 2rem;
+    @include easeOut;
+
+    &:hover {
+      font-size: 1.1rem;
+    }
+  }
+}
+
 // button styles
 .btn {
   display: block;
