@@ -31,6 +31,15 @@ $background-opacity: 0.4;
   }
 }
 
+// set text color
+@function set-text-color($color) {
+  @if (lightness($color) > 40) {
+    @return #000;
+  } @else {
+    @return #fff;
+  }
+}
+
 // media query minins
 // any ccs that is put in here are applied only if the screen is 500px or less
 @mixin mediaSm {
